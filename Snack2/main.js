@@ -23,10 +23,20 @@ let campionato=[
 ];
 
 for(let i=0; i<campionato.length; i++){
-    campionato[i].punti_fatti = GeneraNumero;
-    campionato[i].falli_subiti= GeneraNumero;
+    campionato[i].punti_fatti= getRandomNumber(0,50);
+    campionato[i].falli_subiti= getRandomNumber(0,18);
+
 }
-console.log(punti_fatti);
+
+
+let myArrayFalliNomi=[];
+for(let i=0; i<campionato.length; i++){
+    let squadra=campionato[i];
+    let{ nome, falli_subiti}=squadra;
+    
+    myArrayFalliNomi.push({nome, falli_subiti})
+}
+console.log(myArrayFalliNomi)
 
 function getRandomNumber(min, max){
     return Math.floor(Math.random() * (max - min +1)) + min;
