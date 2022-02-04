@@ -19,7 +19,7 @@ let vetrina=[
     },
 
     {
-        nome:'bici leggera',
+        nome:'bici in carbonio',
         peso:5
     },
 
@@ -37,6 +37,6 @@ for(let i=0; i<vetrina.length;i++){
 
 
 let {peso,nome}=biciLeggera
-console.log('Il peso è  ' + peso)
-console.log('Il nome è  ' + nome)
+console.log(`Il peso è: ${peso} Il nome è: ${nome}`)
+
 
